@@ -1,0 +1,47 @@
+class SpaceAge:
+
+    def __init__(self, age):
+        self.seconds = age
+        self.seconds_to_years = 365.25*24*60*60
+
+
+    def on_earth(self):
+        age_in_years = self.seconds / self.seconds_to_years
+        return round(age_in_years, 2)
+
+    def on_mercury(self):
+        mercury = 0.2408467
+        age_on_mercury = self.seconds / (self.seconds_to_years * mercury)
+        return round(age_on_mercury, 2)
+
+    def on_venus(self):
+        venus = 0.61519726
+        age_on_venus = self.seconds / (self.seconds_to_years * venus)
+        return round(age_on_venus, 2)
+
+    def on_mars(self):
+        mars = 1.8808158
+        age_on_mars = self.seconds / (self.seconds_to_years* mars)
+        return round(age_on_mars, 2)
+
+    def on_jupiter(self):
+        jupiter = 11.862615
+        age_on_jupiter = self.seconds / (self.seconds_to_years * jupiter)
+        return round(age_on_jupiter, 2)
+
+    def on_saturn(self):
+        saturn = 29.447498
+        age_on_saturn = self.seconds / (self.seconds_to_years* saturn)
+        return round(age_on_saturn, 2)
+
+    def on_uranus(self):
+        uranus = 84.016846
+        age_on_uranus = self.seconds / (self.seconds_to_years* uranus)
+        return round(age_on_uranus, 2)
+
+
+    def on_neptune(self):
+        neptune = 164.79132
+        age_on_neptune = self.seconds / (self.seconds_to_years * neptune)
+        return round(age_on_neptune, 2)
+
