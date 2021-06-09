@@ -15,6 +15,7 @@ class SpaceAge:
 
     def on_mercury(self):
         mercury = 0.2408467
+        # COACHES' NOTE: this repeated action of calculating the age on earth could use its own function. Remember: repetition? -> function
         age_on_earth = self.seconds / (365.25*24*60*60)
         age_on_mercury = age_on_earth * mercury
         return round(age_on_mercury, 2)
@@ -55,3 +56,5 @@ class SpaceAge:
         age_on_earth = self.seconds / (365.25*24*60*60)
         age_on_neptune = age_on_earth * neptune
         return round(age_on_neptune, 2)
+
+# COACHES' NOTE: Pretty much perfect.
